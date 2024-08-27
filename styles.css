@@ -1,0 +1,338 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100vw;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: #f6f6f7;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+    line-height: 0%;
+}
+
+.flex-col-2 {
+    flex-grow: 2;
+}
+
+.justify-left {
+    justify-content: left;
+}
+
+.itemsCenter {
+    align-items: center;
+}
+
+.centerEveryThing {
+    justify-content: center;
+    align-items: center;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+/* Container */
+.container {
+    background-color: white;
+    padding: 10px 40px 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    max-width: 380px;
+    width: 100%;
+
+    gap: 0px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border-radius: 2%;
+}
+
+/* Header */
+.title {
+    text-align: center;
+    color: #FF6B82;
+    font-size: 1.5rem;
+    margin: 0;
+    margin: 2vh 0px;
+}
+
+.offer {
+    margin-bottom: 15px;
+}
+
+.offer input[type="radio"] {
+    margin-right: 5px;
+    color: #FF6B82;
+}
+
+.offer input[type="radio"]:checked {
+    background-color: #ff6666;
+    /* Custom color when checked */
+    border-color: #ff6666;
+}
+
+.offer-label {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
+}
+
+.offerInnerPadding {
+    padding: 10px;
+    margin-right: 15px;
+}
+
+.offer-label:hover,
+.offer input[type="radio"]:checked+.offer-label {
+    background-color: #ffe3e9;
+}
+
+.offer-label .discount {
+    background-color: #FF6B82;
+    color: #fff;
+    padding: 5px;
+    border-radius: 7px 0px 0px 7px;
+    font-size: 12px;
+    padding: 12px;
+    text-align: center;
+    width: 60px;
+    border-right: 2px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.offer-label .offer-text {
+    flex-grow: 1;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.offer-label .popular {
+    color: #FF6B82;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.offer-label .price {
+    font-size: 14px;
+    color: #333;
+}
+
+.offer .content {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+}
+
+.offer input[type="radio"]:checked~.content {
+    display: block;
+}
+
+/* Hide the container if it has no content */
+.option-group-container:empty {
+    display: none;
+    /* Hide elements with no content */
+}
+
+/* Style the container if it has content */
+.option-group-container:not(:empty) {
+    background: #FFF9FA;
+    border: 1px solid #FF6B82;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.option-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.option {
+    width: 48%;
+}
+
+.option label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+.option select {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.footer {
+    padding: 15px 0px;
+    color: #FF6B82;
+}
+
+.totalprice {
+    font-size: 14px;
+    color: #333;
+}
+
+#addToCart {
+    width: 100%;
+    background-color: #FF6B82;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#poweredBy {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 16.94px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    color: #D4D4D4;
+}
+
+#poweredBy span {
+    color: #FF6B82;
+}
+
+.discount-wrapper {
+    /* Add your styling here */
+    display: flex;
+    color: #f5f5f5;
+    padding: 10px 12px;
+    border-radius: 3px;
+    background: #FF6B82;
+    margin-left: 7px;
+}
+
+.offer-text.offerInnerPadding {
+    display: flex;
+    align-items: center;
+}
+
+#size2,
+#color2 {
+    margin-top: 5px;
+}
+
+/* ==============custom radio button================= */
+
+/* Hide default radio button */
+input[type="radio"] {
+    display: none;
+}
+
+/* Custom radio button style */
+.custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* position: relative; */
+    /* padding-left: 30px; */
+    /* Adjust as needed */
+}
+
+.inner-custom-radio-button {
+    width: 12px;
+    /* Size of the custom radio button */
+    height: 12px;
+    border: 2px solid white;
+    /* Border color */
+    background-color: #FF6B82;
+    /* Default background color */
+    border-radius: 50%;
+    /* Make it circular */
+    opacity: 0;
+    /* Initially hidden */
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.custom-radio-button {
+    /* position: absolute; */
+    width: 16px;
+    margin-top: 12px;
+    /* Size of the custom radio button */
+    height: 16px;
+    border: 2px solid #FF6B82;
+    /* Border color */
+    background-color: white;
+    /* Default background color */
+    border-radius: 50%;
+    /* Make it circular */
+    transition: background-color 0.3s, border-color 0.3s;
+    position: relative;
+}
+
+/* Show the inner circle when checked */
+input[type="radio"]:checked+.custom-radio-button .inner-custom-radio-button {
+    opacity: 1;
+}
+
+.custom-radio-button::before {
+    content: "";
+    width: 12px;
+    /* Size of the inner circle */
+    height: 10px;
+    border-radius: 50%;
+    /* Make it circular */
+    background-color: #FF6B82;
+    /* Color of the inner circle */
+    transition: background-color 0.3s;
+}
+
+/* Custom radio button style on hover */
+.custom-radio:hover .custom-radio-button {
+    border-color: #FF6B82;
+    /* Border color on hover */
+}

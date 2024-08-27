@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">YAY! It’s BOGO</h1>
+        </header>
+
+        <section class="offer" id="offer1">
+            <label for="offer1-radio" class="offer-label custom-radio relative flex briefLabel">
+                <p class="discount offerInnerPadding">
+                    <span>20%</span>
+                    <span>Off</span>
+                </p>
+                <div class="flex buyingOption">
+                    <input type="radio" id="offer1-radio" name="offer" value="offer1">
+                    <span class="custom-radio-button">
+                        <span class="inner-custom-radio-button"></span>
+                    </span>
+
+                    <div class="flex flex-col justify-left ">
+                        <p class="offer-text offerInnerPadding">Buy 2 Get 2</p>
+                        <p class="price offerInnerPadding bold" data-price="18.00">$18.04 USD</p>
+                    </div>
+                </div>
+            </label>
+        </section>
+
+        <section class="offer" id="offer2">
+            <label for="offer2-radio" class="offer-label custom-radio relative flex briefLabel">
+                <p class="discount offerInnerPadding">
+                    <span>30%</span>
+                    <span>Off</span>
+                </p>
+                <div class="flex buyingOption">
+                    <input type="radio" id="offer2-radio" name="offer" value="offer2">
+                    <span class="custom-radio-button">
+                        <span class="inner-custom-radio-button"></span>
+                    </span>
+
+                    <div class="flex flex-col justify-left ">
+                        <p class="offer-text offerInnerPadding">Buy 1 Get 4</p>
+                        <p class="price offerInnerPadding bold" data-price="48.00">$48.05 USD</p>
+                    </div>
+                </div>
+                <div class="popular">
+                    Most Popular
+                </div>
+            </label>
+        </section>
+
+        <section class="offer" id="offer3">
+            <label for="offer3-radio" class="offer-label custom-radio relative flex briefLabel">
+                <p class="discount offerInnerPadding">
+                    <span>10%</span>
+                    <span>Off</span>
+                </p>
+                <div class="flex buyingOption">
+                    <input type="radio" id="offer3-radio" name="offer" value="offer3" checked>
+                    <span class="custom-radio-button">
+                        <span class="inner-custom-radio-button"></span>
+                    </span>
+
+                    <div class="flex flex-col justify-left ">
+                        <p class="offer-text offerInnerPadding">Buy 3 Get 1</p>
+                        <p class="price offerInnerPadding bold" data-price="24.00">$24.35 USD</p>
+                    </div>
+                </div>
+            </label>
+        </section>
+
+        <footer class="flex spaceBetween footer">
+            <p>Free Delivery</p>
+            <p class="totalprice">Total: $90.44 USD</p>
+        </footer>
+
+        <button id="addToCart"> &plus; Add to Cart </button>
+        <p id="poweredBy">Powered by <span>Pumper</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
